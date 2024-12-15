@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Municipalités</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    
+  <div class="container">
+    <header class="header">
+      <h1 id="title">Tableau de Bord des Municipalités</h1>
+    </header>
+    
+
+    <div class="language-selector">
+      <label for="language-select">Sélectionner la Langue</label>
+      <select id="language-select">
+        <option value="fr" selected>Français</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+
+    <div class="dropdown-container">
+      <label for="governorate-dropdown" id="governorate-label">Sélectionner Gouvernorat</label>
+      <select id="governorate-dropdown">
+        <option selected>Choisissez un Gouvernorat</option>
+      </select>
+    </div>
+
+    <div class="charts-container">
+      <div id="bar-chart" class="chart-box"></div>
+      <div id="line-chart" class="chart-box"></div>
+      <div id="pie-chart" class="chart-box"></div>
+    </div>
+
+    <footer class="footer">
+      <p id="footer-text">Tableau de Bord des Municipalités | Alimenté par la Visualisation des Données</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
